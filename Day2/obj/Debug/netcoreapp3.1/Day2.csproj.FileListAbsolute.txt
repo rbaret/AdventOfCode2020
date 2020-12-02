@@ -1,0 +1,13 @@
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.csprojAssemblyReference.cache
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.AssemblyInfoInputs.cache
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.AssemblyInfo.cs
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.csproj.CoreCompileInputs.cache
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.exe
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.deps.json
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.runtimeconfig.json
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.runtimeconfig.dev.json
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.dll
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.pdb
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.dll
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.pdb
+X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.genruntimeconfig.cache
