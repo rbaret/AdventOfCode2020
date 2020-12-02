@@ -11,3 +11,16 @@ X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\bin\Debu
 X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.dll
 X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.pdb
 X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.genruntimeconfig.cache
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.csprojAssemblyReference.cache
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.AssemblyInfoInputs.cache
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.AssemblyInfo.cs
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.csproj.CoreCompileInputs.cache
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.dll
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.pdb
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.exe
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.deps.json
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.runtimeconfig.json
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.runtimeconfig.dev.json
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.dll
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\bin\Debug\netcoreapp3.1\Day2.pdb
+C:\Users\richard\source\repos\AdventOfCode2020\Day2\obj\Debug\netcoreapp3.1\Day2.genruntimeconfig.cache

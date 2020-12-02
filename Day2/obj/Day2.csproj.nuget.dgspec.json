@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Nextcloud (Owncloud)\\Backup_fixe\\Documents\\Dev\\AdventOfCode2020\\Day2\\Day2.csproj": {}
+    "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day2\\Day2.csproj": {}
   },
   "projects": {
-    "X:\\Nextcloud (Owncloud)\\Backup_fixe\\Documents\\Dev\\AdventOfCode2020\\Day2\\Day2.csproj": {
+    "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day2\\Day2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Nextcloud (Owncloud)\\Backup_fixe\\Documents\\Dev\\AdventOfCode2020\\Day2\\Day2.csproj",
+        "projectUniqueName": "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day2\\Day2.csproj",
         "projectName": "Day2",
-        "projectPath": "X:\\Nextcloud (Owncloud)\\Backup_fixe\\Documents\\Dev\\AdventOfCode2020\\Day2\\Day2.csproj",
+        "projectPath": "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day2\\Day2.csproj",
         "packagesPath": "C:\\Users\\richard\\.nuget\\packages\\",
-        "outputPath": "X:\\Nextcloud (Owncloud)\\Backup_fixe\\Documents\\Dev\\AdventOfCode2020\\Day2\\obj\\",
+        "outputPath": "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

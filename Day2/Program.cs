@@ -8,17 +8,18 @@ namespace Day2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            int nbValidPwdPart1 = checkPasswordOccurences();
+            string path = "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day2\\input.txt";
+            int nbValidPwdPart1 = checkPasswordOccurences(path);
             Console.WriteLine("Number of valid passwords for Part 1 : "+nbValidPwdPart1);
-            int nbValidPwdPart2 = checkPasswordPos();
+            int nbValidPwdPart2 = checkPasswordPos(path);
             Console.WriteLine("Number of valid passwords for Part 2 : " + nbValidPwdPart2);
+            Console.ReadKey();
 
         }
 
-        private static int checkPasswordOccurences()
+        private static int checkPasswordOccurences(string path)
         {
-            IEnumerable<string> lines = File.ReadAllLines(@"X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\input.txt");
+            IEnumerable<string> lines = File.ReadAllLines(@path);
             int validPwds = 0;
             foreach(String line in lines)
             {
@@ -37,9 +38,9 @@ namespace Day2
             }
             return validPwds;
         }
-        private static int checkPasswordPos()
+        private static int checkPasswordPos(string path)
         {
-            IEnumerable<string> lines = File.ReadAllLines(@"X:\Nextcloud (Owncloud)\Backup_fixe\Documents\Dev\AdventOfCode2020\Day2\input.txt");
+            IEnumerable<string> lines = File.ReadAllLines(@path);
             int validPwds = 0;
             foreach (String line in lines)
             {
