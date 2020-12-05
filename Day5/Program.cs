@@ -54,7 +54,7 @@ namespace Day5
             // by adding both of the range and moving towards the center. The moment that sum changes is when there is a missing value
             do
             {
-                int sumSeatIDs = seats[seatIndex] + seats[(seats.Length - 1) - seatIndex]; //initial value
+                int sumSeatIDs = seats[seatIndex] + seats[(size - 1) - seatIndex]; //initial value
                 if (sumSeatIDs != sumLowestHighestSeatId) // The effective sum doesn't match !
                 {
                     // Looking for which value was missing
@@ -64,7 +64,7 @@ namespace Day5
                     }
                     else mySeatId = prevSuperior - 1;
                 }
-                prevSuperior = seats[(seats.Length - 1) - seatIndex]; // keeping a track of the values of the previous iteration in case we need to find the missing value
+                prevSuperior = seats[(size - 1) - seatIndex]; // keeping a track of the values of the previous iteration in case we need to find the missing value
                 prevInferior = seats[seatIndex];
                 seatIndex++;
             } while ((seatIndex <= size / 2) && (mySeatId == 0)); // We stop the loop when
@@ -72,11 +72,11 @@ namespace Day5
             // Alternative method :
             // Based on the formula to calculate the sum of n integers from 1 to n : n*(n+1)/2 but transposed to our current situation. Here we just take the sum of first and last item of the array and multiply by half the length (rounding the lenght to the next even number if odd by adding 1 to the length)
             int halfArrayLength = 0;
-            if (seats.Length % 2 == 0) halfArrayLength = seats.Length / 2; else halfArrayLength = (seats.Length + 1) / 2; 
+            if (size % 2 == 0) halfArrayLength = size / 2; else halfArrayLength = (size + 1) / 2; 
             int theoriticalSum = (highestSeatId + lowestSeatId) * (halfArrayLength); // The theoritical number we should find by adding all the seats ID
             
             int effectiveSum = 0;
-            for (seatIndex = 0; seatIndex < seats.Length; seatIndex++) // Adding all the values of the array to get the effective sum
+            for (seatIndex = 0; seatIndex < size; seatIndex++) // Adding all the values of the array to get the effective sum
             {
                 effectiveSum += seats[seatIndex];
             }
