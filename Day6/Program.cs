@@ -43,7 +43,7 @@ namespace Day6
                 {
                     intersect = intersect.Intersect(memberAnswer).ToArray();
                 }
-                sumAnswers += intersect.Distinct().Count();
+                sumAnswers += intersect.Length;
             }
             return sumAnswers;
         }
