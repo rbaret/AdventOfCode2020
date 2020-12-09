@@ -58,12 +58,12 @@ namespace Day9
             {
                 long sum = 0;
                 int nbSum = 0;
-                while (sum < impostor) // Adding next number til while the sum is below impostor value
+                while (sum < impostor) // Adding next number while the sum is below impostor value
                 {
                     sum += numbers[startindex + nbSum];
                     nbSum++;
                 }
-                if ((sum == impostor) && (nbSum>=2)) // SUm found 
+                if ((sum == impostor) && (nbSum>=2)) // Sum found 
                 {
                     List<long> consecutiveNumbers = numbers.GetRange(startindex, nbSum);
                     consecutiveNumbers.Sort(); // Sorting the n numbers used in the sum
