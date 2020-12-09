@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+OEI9tps8VNk6HnEfHMX4oRHcl6nBKnag9McG+n6m3WhZZdy6nJVPqV8RFaOFLhaN1ycBZI2T71UoTtIdAcrSg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day9\\Day9.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\richard\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\richard\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
