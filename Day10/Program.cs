@@ -33,21 +33,50 @@ namespace Day10
 
         private static long FindAdaptersCombinations(List<int> adapters)
         {
-            long count = 1;
-            int node=0;
-            for(int index = adapters.Count-1;index>=1;index--)
+            //long countCombination = 0;
+            List<long> countCombinations = new List<long>();
+            // Initialize combinations for each adapters to 1
+            for (int i = 0; i <= adapters.Count; i++)
+                countCombinations.Add(1);
+
+            for(int index = adapters.Count-2;index>=0;index--)
             {
-                node = 0;
-                for(int indexPrev = index - 1; (indexPrev >= 0) && (index-indexPrev<=3); indexPrev--)
+                long combinations = 0;
+                for(int indexNext = index + 1; (indexNext <adapters.Count) && (indexNext<=index+3); indexNext++)
                 {
-                    if (adapters[index] - adapters[indexPrev] <= 3)
-                        node++;
+                    if (adapters[indexNext] - adapters[index] <= 3)
+                        //combinations++;
+                        combinations += countCombinations[indexNext];
                 }
-                count *= node;
+                //countCombinations += combination;
+                countCombinations[index] = combinations;
+
             }
-            return count;
+            return countCombinations[0];
         }
 
+        public static ulong ResolvePart2(List<int> Numbers)
+        {
+            List<ulong> arrangementCounts = new List<ulong>();
+            for (int i = 0; i <= Numbers.Count; i++)
+                arrangementCounts.Add(1);
+
+            for (int headIndex = Numbers.Count - 2; headIndex >= 0; headIndex--)
+            {
+                ulong arrangementCount = 0;
+                for (
+                    int jump = 1;
+                    jump <= 3
+                    && headIndex + jump < Numbers.Count
+                    && Numbers[headIndex + jump] - Numbers[headIndex] <= 3;
+                    jump++)
+                    arrangementCount += arrangementCounts[headIndex + jump];
+
+                arrangementCounts[headIndex] = arrangementCount;
+            }
+
+            return arrangementCounts[0];
+        }
         private static List<int> GenerateAdaptersList(string path)
         {
             List<int> adapters = new List<int>();
