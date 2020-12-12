@@ -9,7 +9,7 @@ namespace Day10
     {
         static void Main(string[] args)
         {
-            string path = "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day10\\inputsample.txt";
+            string path = "C:\\Users\\richard\\source\\repos\\AdventOfCode2020\\Day10\\input.txt";
             Console.WriteLine(AdapterChain(path));
             List<int> adaptersList = GenerateAdaptersList(path);
             Console.WriteLine(FindAdaptersCombinations(adaptersList)); 
@@ -31,52 +31,27 @@ namespace Day10
             return (diff1 * diff3);
         }
 
+        // Implemented after I have well understood the dynamic programming concept for x(i) = x(i-1)+x(i-2)...+x(i-n) without recursion
         private static long FindAdaptersCombinations(List<int> adapters)
         {
-            //long countCombination = 0;
-            List<long> countCombinations = new List<long>();
-            // Initialize combinations for each adapters to 1
-            for (int i = 0; i <= adapters.Count; i++)
-                countCombinations.Add(1);
-
-            for(int index = adapters.Count-2;index>=0;index--)
+            int nbAdapters = adapters.Count;
+            long[] adapterCombinations = new long[nbAdapters];
+            adapterCombinations[nbAdapters-1] = 1;
+            long totalCombinations = 0;
+            for (int index = nbAdapters-2;index>=0;index--)
             {
-                long combinations = 0;
+                
                 for(int indexNext = index + 1; (indexNext <adapters.Count) && (indexNext<=index+3); indexNext++)
                 {
                     if (adapters[indexNext] - adapters[index] <= 3)
-                        //combinations++;
-                        combinations += countCombinations[indexNext];
+                        adapterCombinations[index] += adapterCombinations[indexNext];                      
                 }
-                //countCombinations += combination;
-                countCombinations[index] = combinations;
+                totalCombinations += adapterCombinations[index];
 
             }
-            return countCombinations[0];
+            return adapterCombinations[0];
         }
 
-        public static ulong ResolvePart2(List<int> Numbers)
-        {
-            List<ulong> arrangementCounts = new List<ulong>();
-            for (int i = 0; i <= Numbers.Count; i++)
-                arrangementCounts.Add(1);
-
-            for (int headIndex = Numbers.Count - 2; headIndex >= 0; headIndex--)
-            {
-                ulong arrangementCount = 0;
-                for (
-                    int jump = 1;
-                    jump <= 3
-                    && headIndex + jump < Numbers.Count
-                    && Numbers[headIndex + jump] - Numbers[headIndex] <= 3;
-                    jump++)
-                    arrangementCount += arrangementCounts[headIndex + jump];
-
-                arrangementCounts[headIndex] = arrangementCount;
-            }
-
-            return arrangementCounts[0];
-        }
         private static List<int> GenerateAdaptersList(string path)
         {
             List<int> adapters = new List<int>();
