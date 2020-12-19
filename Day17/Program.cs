@@ -6,7 +6,7 @@ namespace Day17
 {
     static class Program
     {
-        public static List<Cube> activeCubesList = new List<Cube>();
+        public static HashSet<Cube> activeCubesList = new HashSet<Cube>();
         static void Main(string[] args)
         {
             DateTime time = DateTime.Now;
@@ -22,7 +22,7 @@ namespace Day17
 
         private static int CycleBoot4D()
         {
-            List<Cube> buffer = new List<Cube>();
+            HashSet<Cube> buffer = new HashSet<Cube>(); ;
             Cube currentCube;
 
             int w, x, y, z;
@@ -42,11 +42,8 @@ namespace Day17
 
                 for (w = wmin; w <= wmax; w++)
                 {
-                    Console.WriteLine("W dimension value : " + w);
                     for (z = zmin; z <= zmax; z++)
                     {
-
-                        Console.WriteLine("\tZ dimension value : " + z);
                         for (x = xmin; x <= xmax; x++)
                         {
                             for (y = ymin; y <= ymax; y++)
@@ -82,7 +79,7 @@ namespace Day17
                         }
                     }
                 }
-                activeCubesList = new List<Cube>(buffer);
+                activeCubesList = new HashSet<Cube>(buffer);
                 buffer.Clear();
             }
             return activeCubesList.Count;
@@ -90,7 +87,7 @@ namespace Day17
 
         private static int CycleBoot3D()
         {
-            List<Cube> buffer = new List<Cube>();
+            HashSet<Cube> buffer = new HashSet<Cube>();
             Cube currentCube;
 
             int x, y, z;
@@ -137,7 +134,7 @@ namespace Day17
 
                 }
 
-                activeCubesList = new List<Cube>(buffer);
+                activeCubesList = new HashSet<Cube>(buffer);
                 buffer.Clear();
             }
             return activeCubesList.Count;

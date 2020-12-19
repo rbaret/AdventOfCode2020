@@ -85,7 +85,7 @@ namespace Day17
         }
         public override int GetHashCode()
         {
-            return w + x * 0x00010000 + y + z;
+            return w*1000000 + x * 10000 + y*100 + z;
         }
 
         public static bool operator ==(Cube lhs, Cube rhs)
